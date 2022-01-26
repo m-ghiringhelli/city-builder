@@ -43,7 +43,7 @@ section {
     background-color: var(--color5);
     max-width: 80%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     padding-top: var(--gutter);
@@ -51,6 +51,11 @@ section {
     margin-top: var(--gutter);
     margin-bottom: var(--gutter);
     border: solid 2px var(--color1);
+}
+
+.image-menu {
+    display: flex;
+    flex-direction: column;
 }
 
 header {
