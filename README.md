@@ -7,7 +7,7 @@ If you work on more than one feature at a time, you are guaranteed to multiply y
 ## Making a plan
 
 HTML
-1) Build dropdowns
+1) Build dropdowns  CHECK
 2) Structure divs for grouping
 3) Add images
 4) Add slogans input
