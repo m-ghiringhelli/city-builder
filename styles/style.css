@@ -64,6 +64,11 @@ section {
     width: 100%;
 }
 
+#slogan {
+    display: flex;
+    flex-direction: column;
+}
+
 header {
     display: flex;
     justify-content: flex-end;
