@@ -2,7 +2,9 @@
 const climateMenu = document.getElementById('climate-menu');
 const architectureMenu = document.getElementById('architecture-menu');
 const cultureMenu = document.getElementById('culture-menu');
-
+const climateEl = document.getElementById('climate-image');
+const architectureEl = document.getElementById('architecture-image');
+const cultureEl = document.getElementById('culture-image');
 const sloganInput = document.getElementById('slogan-input');
 const sloganButton = document.getElementById('slogan-button');
 
