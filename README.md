@@ -9,7 +9,7 @@ If you work on more than one feature at a time, you are guaranteed to multiply y
 HTML
 1) Build dropdowns  CHECK
 2) Structure divs for grouping
-3) Add images
+3) Add images CHECK
 4) Add slogans input
 
 JavaScript
