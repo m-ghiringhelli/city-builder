@@ -14,20 +14,26 @@ let cultureCount = 0;
 // set event listeners 
 climateMenu.addEventListener('change', () => {
     //get value of dropdown
+    const climateChoice = climateMenu.value;
+    console.log(climateChoice);
     //increment count
     //update DOM
     //update stats
 });
 
 architectureMenu.addEventListener('change', () => {
-  //get value of dropdown
-  //increment count
-  //update DOM
-  //update stats
+    //get value of dropdown
+    const architectureChoice = architectureMenu.value;
+    console.log(architectureChoice);
+    //increment count
+    //update DOM
+    //update stats
 });
 
 cultureMenu.addEventListener('change', () => {
   //get value of dropdown
+    const cultureChoice = cultureMenu.value;
+    console.log(cultureChoice);
   //increment count
   //update DOM
   //update stats
