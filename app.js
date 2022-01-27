@@ -14,6 +14,7 @@ const architectureText = document.getElementById('architecture-count-display');
 const cultureText = document.getElementById('culture-count-display');
 const sloganInput = document.getElementById('slogan-input');
 const sloganButton = document.getElementById('slogan-button');
+const sloganEl = document.getElementById('slogan-display');
 
 // let state
 let climateCount = 0;
@@ -69,9 +70,18 @@ sloganButton.addEventListener('click', () => {
 function displayStats() {
     
 }
+
 function displaySlogans(slogan) {
     //update DOM
-    
+    sloganEl.textContent = '';
+    //loop through the slogans to display
+    for (slogan of slogansArray) {
+        //create HTML element with slogan as content
+        const sloganPara = document.createElement('p');
+        sloganPara.textContent = slogan;
+        //and append to DOM
+        sloganEl.appendChild(sloganPara);
+    }
 }
 
   // get user input
