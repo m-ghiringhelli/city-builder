@@ -8,9 +8,9 @@ If you work on more than one feature at a time, you are guaranteed to multiply y
 
 HTML
 1) Build dropdowns  CHECK
-2) Structure divs for grouping
+2) Structure divs for grouping CHECK
 3) Add images CHECK
-4) Add slogans input
+4) Add slogans input CHECK
 
 JavaScript
 1) Test/create function
