@@ -20,6 +20,7 @@ climateMenu.addEventListener('change', () => {
     //increment count
     climateCount++;
     //update DOM
+    climateEl.src = `../assets/${climateChoice}.jpg`;
     //update stats
 });
 
