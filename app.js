@@ -5,7 +5,11 @@ const cultureMenu = document.getElementById('culture-menu');
 
 const sloganInput = document.getElementById('slogan-input');
 const sloganButton = document.getElementById('slogan-button');
+
 // let state
+let climateCount = 0;
+let architectureCount = 0;
+let cultureCount = 0;
 
 // set event listeners 
   // get user input
