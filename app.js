@@ -15,8 +15,8 @@ let cultureCount = 0;
 climateMenu.addEventListener('change', () => {
     //get value of dropdown
     const climateChoice = climateMenu.value;
-    console.log(climateChoice);
     //increment count
+    climateCount++;
     //update DOM
     //update stats
 });
@@ -24,19 +24,19 @@ climateMenu.addEventListener('change', () => {
 architectureMenu.addEventListener('change', () => {
     //get value of dropdown
     const architectureChoice = architectureMenu.value;
-    console.log(architectureChoice);
     //increment count
+    architectureCount++;
     //update DOM
     //update stats
 });
 
 cultureMenu.addEventListener('change', () => {
-  //get value of dropdown
+    //get value of dropdown
     const cultureChoice = cultureMenu.value;
-    console.log(cultureChoice);
-  //increment count
-  //update DOM
-  //update stats
+    //increment count
+    cultureCount++;
+    //update DOM
+    //update stats
 });
 
   // get user input
