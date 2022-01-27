@@ -9,6 +9,9 @@ const cultureMenu = document.getElementById('culture-menu');
 const climateEl = document.getElementById('climate-image');
 const architectureEl = document.getElementById('architecture-image');
 const cultureEl = document.getElementById('culture-image');
+const climateText = document.getElementById('climate-count-display');
+const architectureText = document.getElementById('architecture-count-display');
+const cultureText = document.getElementById('culture-count-display');
 const sloganInput = document.getElementById('slogan-input');
 const sloganButton = document.getElementById('slogan-button');
 
@@ -26,6 +29,7 @@ climateMenu.addEventListener('change', () => {
     //update DOM
     climateEl.src = `../assets/${climateChoice}.jpg`;
     //update stats
+    climateText.textContent = createCountString('climate', climateCount);
 });
 
 architectureMenu.addEventListener('change', () => {
