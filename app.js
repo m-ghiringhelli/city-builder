@@ -1,4 +1,8 @@
 // import functions and grab DOM elements
+import {
+    createCountString,
+} from '../utils.js';
+
 const climateMenu = document.getElementById('climate-menu');
 const architectureMenu = document.getElementById('architecture-menu');
 const cultureMenu = document.getElementById('culture-menu');
@@ -43,6 +47,8 @@ cultureMenu.addEventListener('change', () => {
     cultureEl.src = `../assets/${cultureChoice}.jpg`;
     //update stats
 });
+
+
 
   // get user input
   // use user input to update state 
