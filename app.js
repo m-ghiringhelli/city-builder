@@ -12,6 +12,27 @@ let architectureCount = 0;
 let cultureCount = 0;
 
 // set event listeners 
+climateMenu.addEventListener('change', () => {
+    //get value of dropdown
+    //increment count
+    //update DOM
+    //update stats
+});
+
+architectureMenu.addEventListener('change', () => {
+  //get value of dropdown
+  //increment count
+  //update DOM
+  //update stats
+});
+
+cultureMenu.addEventListener('change', () => {
+  //get value of dropdown
+  //increment count
+  //update DOM
+  //update stats
+});
+
   // get user input
   // use user input to update state 
   // update DOM to reflect the new state
