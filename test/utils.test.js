@@ -1,7 +1,6 @@
 // IMPORT MODULES under test here:
 import { 
-    createCountString,
-    incrementMenuCount,     
+    createCountString,    
 } from '../utils.js';
 
 const test = QUnit.test;
