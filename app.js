@@ -19,6 +19,7 @@ const sloganButton = document.getElementById('slogan-button');
 let climateCount = 0;
 let architectureCount = 0;
 let cultureCount = 0;
+let slogansArray = [];
 
 // set event listeners 
 climateMenu.addEventListener('change', () => {
@@ -40,6 +41,7 @@ architectureMenu.addEventListener('change', () => {
     //update DOM
     architectureEl.src = `../assets/${architectureChoice}.jpg`;
     //update stats
+    architectureText.textContent = createCountString('architecture', architectureCount);
 });
 
 cultureMenu.addEventListener('change', () => {
@@ -50,9 +52,27 @@ cultureMenu.addEventListener('change', () => {
     //update DOM
     cultureEl.src = `../assets/${cultureChoice}.jpg`;
     //update stats
+    cultureText.textContent = createCountString('culture', cultureCount);
 });
 
+sloganButton.addEventListener('click', () => {
+    //get user input
+    const newSlogan = sloganInput.value;
+    //update state
+    slogansArray.push(newSlogan);
+    //clear input
+    sloganInput.value = '';
+    //update DOM
+    displaySlogans(slogansArray);
+});
 
+function displayStats() {
+    
+}
+function displaySlogans(slogan) {
+    //update DOM
+    
+}
 
   // get user input
   // use user input to update state 
