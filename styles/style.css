@@ -53,6 +53,11 @@ main {
     width: 100%;
 }
 
+img {
+    width: 400px;
+    height: 266px;
+}
+
 .image-menu {
     display: flex;
     flex-direction: column;

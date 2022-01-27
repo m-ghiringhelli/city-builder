@@ -30,6 +30,7 @@ architectureMenu.addEventListener('change', () => {
     //increment count
     architectureCount++;
     //update DOM
+    architectureEl.src = `../assets/${architectureChoice}.jpg`;
     //update stats
 });
 
@@ -39,6 +40,7 @@ cultureMenu.addEventListener('change', () => {
     //increment count
     cultureCount++;
     //update DOM
+    cultureEl.src = `../assets/${cultureChoice}.jpg`;
     //update stats
 });
 
