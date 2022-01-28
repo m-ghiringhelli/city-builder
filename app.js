@@ -15,8 +15,11 @@ const cultureText = document.getElementById('culture-count-display');
 const sloganInput = document.getElementById('slogan-input');
 const sloganButton = document.getElementById('slogan-button');
 const sloganEl = document.getElementById('slogan-display');
-
-const container = document.getElementById('dropdowns');
+const climateImage = document.getElementById('climate-image-menu');
+const architectureImage = document.getElementById('architecture-image-menu');
+const cultureImage = document.getElementById('culture-image-menu');
+//console.log(images);
+//const container = document.getElementById('dropdowns');
 
 // let state
 let climateCount = 0;
@@ -35,7 +38,8 @@ climateMenu.addEventListener('change', () => {
     //update stats
     displayStats('climate', climateCount, climateText);
     //adjust container margin
-    adjustMargin();
+    climateImage.style.setProperty('margin-bottom', '0px');
+    //styleImagesOnClick(0);
 });
 
 architectureMenu.addEventListener('change', () => {
@@ -48,7 +52,7 @@ architectureMenu.addEventListener('change', () => {
     //update stats
     displayStats('architecture', architectureCount, architectureText);
     //adjust container margin
-    adjustMargin();
+    architectureImage.style.setProperty('margin-bottom', '0px');
 });
 
 cultureMenu.addEventListener('change', () => {
@@ -61,7 +65,7 @@ cultureMenu.addEventListener('change', () => {
     //cultureText.textContent = createCountString('culture', cultureCount);
     displayStats('culture', cultureCount, cultureText);
     //adjust container margin
-    adjustMargin();
+    cultureImage.style.setProperty('margin-bottom', '0px');
 });
 
 sloganButton.addEventListener('click', () => {
@@ -80,10 +84,11 @@ function displayStats(type, count, element) {
     element.textContent = string;
 }
 
-function adjustMargin() {
-    container.style.setProperty('margin-bottom', '0px');
+function styleImagesOnClick(img) {
+    climateImage.style.setProperty('padding', '5px');
+    //images[img].classList.add('clicked');
 }
-
+console.log(images);
 function displaySlogans(slogan) {
     //update DOM
     sloganEl.textContent = '';

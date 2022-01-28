@@ -38,12 +38,9 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: flex-start;
+    align-items: center;
     flex-wrap: wrap;
-    padding-top: var(--gutter);
-    padding-bottom: var(--gutter);
-    margin-top: 0px;
-    margin-bottom: var(--gutter);
+    padding: 30px 0px;
     width: 100%;
 }
 
@@ -65,7 +62,8 @@ span {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    margin-bottom: 23px;
+    padding: 5px;
+    margin-bottom: 26px;
 }
 
 #break {
