@@ -27,7 +27,7 @@ body {
     --gutter: 30px;
     --footer-height: 25px;
     
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Voltaire', sans-serif;
     background-color: var(--color2);
     background-image: url(../assets/city-bg.jpg);
     color: var(--color1);
@@ -64,6 +64,7 @@ img {
     border-radius: 5px;
     border: solid black 3px;
 }
+
 
 .image-menu {
     display: flex;
