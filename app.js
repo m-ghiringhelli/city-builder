@@ -16,6 +16,8 @@ const sloganInput = document.getElementById('slogan-input');
 const sloganButton = document.getElementById('slogan-button');
 const sloganEl = document.getElementById('slogan-display');
 
+const container = document.getElementById('dropdowns');
+
 // let state
 let climateCount = 0;
 let architectureCount = 0;
@@ -32,6 +34,8 @@ climateMenu.addEventListener('change', () => {
     climateEl.src = `../assets/${climateChoice}.jpg`;
     //update stats
     displayStats('climate', climateCount, climateText);
+    //adjust container margin
+    adjustMargin();
 });
 
 architectureMenu.addEventListener('change', () => {
@@ -43,6 +47,8 @@ architectureMenu.addEventListener('change', () => {
     architectureEl.src = `../assets/${architectureChoice}.jpg`;
     //update stats
     displayStats('architecture', architectureCount, architectureText);
+    //adjust container margin
+    adjustMargin();
 });
 
 cultureMenu.addEventListener('change', () => {
@@ -54,6 +60,8 @@ cultureMenu.addEventListener('change', () => {
     cultureEl.src = `../assets/${cultureChoice}.jpg`;
     //cultureText.textContent = createCountString('culture', cultureCount);
     displayStats('culture', cultureCount, cultureText);
+    //adjust container margin
+    adjustMargin();
 });
 
 sloganButton.addEventListener('click', () => {
@@ -70,6 +78,10 @@ sloganButton.addEventListener('click', () => {
 function displayStats(type, count, element) {
     const string = createCountString(type, count);
     element.textContent = string;
+}
+
+function adjustMargin() {
+    container.style.setProperty('margin-bottom', '0px');
 }
 
 function displaySlogans(slogan) {

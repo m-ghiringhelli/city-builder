@@ -64,13 +64,18 @@ main {
 img {
     width: 400px;
     height: 266px;
-    border-radius: 5px;
-    border: solid black 3px;
+    border-radius: 5%;
+}
+
+span {
+    font-size: 1.3rem;
 }
 
 .image-menu {
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 23px;
 }
 
 #break {
@@ -88,6 +93,11 @@ img {
 
 #slogan-button {
     margin: 5px 0px;
+}
+
+.clicked {
+    border: solid rgb(243, 240, 240) 3px;
+    border-radius: 5px;
 }
 
 header {
