@@ -65,7 +65,6 @@ img {
     border: solid black 3px;
 }
 
-
 .image-menu {
     display: flex;
     flex-direction: column;
@@ -89,9 +88,15 @@ header {
 }
 
 
-h2 {
-    font-size: 1.8rem;
+h1 {
+    font-size: 6rem;
     font-weight: bold;
+}
+
+label {
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-around;
 }
 
 .gutter-right {
@@ -104,6 +109,7 @@ header img {
 
 p {
     margin: var(--gutter);
+    font-size: 1.8rem;
 }
   
 footer {
