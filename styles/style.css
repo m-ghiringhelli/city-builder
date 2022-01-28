@@ -92,6 +92,7 @@ h1 {
     font-size: 6rem;
     font-weight: bold;
     margin-bottom: 0px;
+    text-shadow: 0 5px 25px var(--color1);
 }
 
 label {
@@ -144,7 +145,6 @@ button {
     background-color: var(--color2);
     color: var(--color1);
     border: 2px solid var(--color2);
-    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
 }
 
 p {
