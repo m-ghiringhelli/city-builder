@@ -31,7 +31,7 @@ climateMenu.addEventListener('change', () => {
     //update DOM
     climateEl.src = `../assets/${climateChoice}.jpg`;
     //update stats
-    climateText.textContent = createCountString('climate', climateCount);
+    displayStats('climate', climateCount, climateText);
 });
 
 architectureMenu.addEventListener('change', () => {
@@ -42,7 +42,7 @@ architectureMenu.addEventListener('change', () => {
     //update DOM
     architectureEl.src = `../assets/${architectureChoice}.jpg`;
     //update stats
-    architectureText.textContent = createCountString('architecture', architectureCount);
+    displayStats('architecture', architectureCount, architectureText);
 });
 
 cultureMenu.addEventListener('change', () => {
@@ -52,8 +52,8 @@ cultureMenu.addEventListener('change', () => {
     cultureCount++;
     //update DOM
     cultureEl.src = `../assets/${cultureChoice}.jpg`;
-    //update stats
-    cultureText.textContent = createCountString('culture', cultureCount);
+    //cultureText.textContent = createCountString('culture', cultureCount);
+    displayStats('culture', cultureCount, cultureText);
 });
 
 sloganButton.addEventListener('click', () => {
@@ -67,8 +67,9 @@ sloganButton.addEventListener('click', () => {
     displaySlogans(slogansArray);
 });
 
-function displayStats() {
-    
+function displayStats(type, count, element) {
+    const string = createCountString(type, count);
+    element.textContent = string;
 }
 
 function displaySlogans(slogan) {
@@ -83,7 +84,3 @@ function displaySlogans(slogan) {
         sloganEl.appendChild(sloganPara);
     }
 }
-
-  // get user input
-  // use user input to update state 
-  // update DOM to reflect the new state
