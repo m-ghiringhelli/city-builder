@@ -73,11 +73,11 @@ cultureSelect.addEventListener('change', () => {
 
 sloganButton.addEventListener('click', () => {
     //get user input
-    let newSlogan = sloganInput.value;
+    const newSlogan = sloganInput.value;
     //update state
     slogansArray.push(newSlogan);
     //clear input
-    newSlogan = '';
+    sloganInput.value = '';
     //update DOM
     displaySlogans(slogansArray);
 });
