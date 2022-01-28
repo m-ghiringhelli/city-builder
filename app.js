@@ -3,23 +3,26 @@ import {
     createCountString,
 } from '../utils.js';
 
-const climateMenu = document.getElementById('climate-menu');
-const architectureMenu = document.getElementById('architecture-menu');
-const cultureMenu = document.getElementById('culture-menu');
-const climateEl = document.getElementById('climate-image');
-const architectureEl = document.getElementById('architecture-image');
-const cultureEl = document.getElementById('culture-image');
-const climateText = document.getElementById('climate-count-display');
-const architectureText = document.getElementById('architecture-count-display');
-const cultureText = document.getElementById('culture-count-display');
-const sloganInput = document.getElementById('slogan-input');
-const sloganButton = document.getElementById('slogan-button');
-const sloganEl = document.getElementById('slogan-display');
+//containers for selects and images
 const climateImage = document.getElementById('climate-image-menu');
 const architectureImage = document.getElementById('architecture-image-menu');
 const cultureImage = document.getElementById('culture-image-menu');
-//console.log(images);
-//const container = document.getElementById('dropdowns');
+//get selects
+const climateMenu = document.getElementById('climate-menu');
+const architectureMenu = document.getElementById('architecture-menu');
+const cultureMenu = document.getElementById('culture-menu');
+//where the images go
+const climateEl = document.getElementById('climate-image');
+const architectureEl = document.getElementById('architecture-image');
+const cultureEl = document.getElementById('culture-image');
+//where the "number of changes" text goes
+const climateText = document.getElementById('climate-count-display');
+const architectureText = document.getElementById('architecture-count-display');
+const cultureText = document.getElementById('culture-count-display');
+//city slogans
+const sloganInput = document.getElementById('slogan-input');
+const sloganButton = document.getElementById('slogan-button');
+const sloganEl = document.getElementById('slogan-display');
 
 // let state
 let climateCount = 0;
@@ -84,11 +87,6 @@ function displayStats(type, count, element) {
     element.textContent = string;
 }
 
-function styleImagesOnClick(img) {
-    climateImage.style.setProperty('padding', '5px');
-    //images[img].classList.add('clicked');
-}
-console.log(images);
 function displaySlogans(slogan) {
     //update DOM
     sloganEl.textContent = '';
