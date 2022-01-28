@@ -3,7 +3,7 @@ body {
     /* feel free to update these css variables for a quick theme */
     
     --color1: white;
-    --color2: white;
+    --color2: rgba(182, 179, 189, 0.185);
     --color3: white;
     --color4: white;
     --color5: white;
@@ -29,6 +29,8 @@ body {
     
     font-family: 'Titillium Web', sans-serif;
     background-color: var(--color2);
+    background-image: url(../assets/city-bg.jpg);
+    color: var(--color1);
 }
 
 main {
@@ -37,25 +39,30 @@ main {
     justify-content: center;
     align-items: center;
     margin-bottom: calc(var(--footer-height));
+    width: 95%;
+    border-radius: 5px;
+    background-color: var(--color2);
+    padding-bottom: 100px;
 }
 
 #dropdowns {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
     padding-top: var(--gutter);
     padding-bottom: var(--gutter);
     margin-top: var(--gutter);
     margin-bottom: var(--gutter);
-    border: solid 2px var(--color1);
     width: 100%;
 }
 
 img {
     width: 400px;
     height: 266px;
+    border-radius: 5px;
+    border: solid black 3px;
 }
 
 .image-menu {
