@@ -4,17 +4,17 @@ import {
 } from '../utils.js';
 
 //containers for selects and images
-const climateImage = document.getElementById('climate-image-menu');
-const architectureImage = document.getElementById('architecture-image-menu');
-const cultureImage = document.getElementById('culture-image-menu');
+const climateContainer = document.getElementById('climate-image-menu');
+const archContainer = document.getElementById('architecture-image-menu');
+const cultureContainer = document.getElementById('culture-image-menu');
 //get selects
-const climateMenu = document.getElementById('climate-menu');
-const architectureMenu = document.getElementById('architecture-menu');
-const cultureMenu = document.getElementById('culture-menu');
+const climateSelect = document.getElementById('climate-menu');
+const archSelect = document.getElementById('architecture-menu');
+const cultureSelect = document.getElementById('culture-menu');
 //where the images go
-const climateEl = document.getElementById('climate-image');
-const architectureEl = document.getElementById('architecture-image');
-const cultureEl = document.getElementById('culture-image');
+const climateImage = document.getElementById('climate-image');
+const archImage = document.getElementById('architecture-image');
+const cultureImage = document.getElementById('culture-image');
 //where the "number of changes" text goes
 const climateText = document.getElementById('climate-count-display');
 const architectureText = document.getElementById('architecture-count-display');
@@ -31,44 +31,44 @@ let cultureCount = 0;
 let slogansArray = [];
 
 // set event listeners 
-climateMenu.addEventListener('change', () => {
+climateSelect.addEventListener('change', () => {
     //get value of dropdown
-    const climateChoice = climateMenu.value;
+    const climateChoice = climateSelect.value;
     //increment count
     climateCount++;
     //update DOM
-    climateEl.src = `../assets/${climateChoice}.jpg`;
+    climateImage.src = `../assets/${climateChoice}.jpg`;
     //update stats
     displayStats('climate', climateCount, climateText);
     //adjust container margin
-    climateImage.style.setProperty('margin-bottom', '0px');
+    climateContainer.style.setProperty('margin-bottom', '0px');
     //styleImagesOnClick(0);
 });
 
-architectureMenu.addEventListener('change', () => {
+archSelect.addEventListener('change', () => {
     //get value of dropdown
-    const architectureChoice = architectureMenu.value;
+    const architectureChoice = archSelect.value;
     //increment count
     architectureCount++;
     //update DOM
-    architectureEl.src = `../assets/${architectureChoice}.jpg`;
+    archImage.src = `../assets/${architectureChoice}.jpg`;
     //update stats
     displayStats('architecture', architectureCount, architectureText);
     //adjust container margin
-    architectureImage.style.setProperty('margin-bottom', '0px');
+    archContainer.style.setProperty('margin-bottom', '0px');
 });
 
-cultureMenu.addEventListener('change', () => {
+cultureSelect.addEventListener('change', () => {
     //get value of dropdown
-    const cultureChoice = cultureMenu.value;
+    const cultureChoice = cultureSelect.value;
     //increment count
     cultureCount++;
     //update DOM
-    cultureEl.src = `../assets/${cultureChoice}.jpg`;
+    cultureImage.src = `../assets/${cultureChoice}.jpg`;
     //cultureText.textContent = createCountString('culture', cultureCount);
     displayStats('culture', cultureCount, cultureText);
     //adjust container margin
-    cultureImage.style.setProperty('margin-bottom', '0px');
+    cultureContainer.style.setProperty('margin-bottom', '0px');
 });
 
 sloganButton.addEventListener('click', () => {
