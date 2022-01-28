@@ -2,11 +2,11 @@
 body {
     /* feel free to update these css variables for a quick theme */
     
-    --color1: white;
-    --color2: rgba(182, 179, 189, 0.185);
-    --color3: white;
-    --color4: white;
-    --color5: white;
+    --color1: hsla(71, 50%, 95%, 1);
+    --color2: hsla(197, 88%, 69%, 1);
+    --color3: hsla(355, 87%, 66%, .1);
+    --color4: hsla(238, 16%, 55%, .2);
+    --color5: hsla(239, 94%, 19%, 1);
     
     font-family: 'Voltaire', sans-serif;
     background-color: var(--color2);
@@ -25,7 +25,7 @@ main {
     margin-bottom: calc(var(--footer-height));
     width: 95%;
     border-radius: 40px;
-    background-color: var(--color2);
+    background-color: var(--color4);
     padding-bottom: 100px;
 }
 
@@ -48,6 +48,7 @@ img {
     width: 400px;
     height: 266px;
     border-radius: 15px;
+    background-color: var(--color3);
 }
 
 span {
@@ -114,6 +115,9 @@ input {
 
 button {
     border-radius: 5px;
+    background-color: var(--color3);
+    color: var(--color1);
+    border: 2px solid var(--color5);
 }
 
 p {
