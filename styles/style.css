@@ -98,20 +98,28 @@ h1 {
 label {
     font-size: 2rem;
     display: flex;
-    justify-content: center;
-    margin-bottom: 15px;
+    /* align-items: center; */
+    /* margin-bottom: 15px; */
 }
 
 .gutter-right {
     margin-right: 20px;
 }
 
-.custom-select {
+.label-select {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+/* .custom-select {
     position: relative;
     top: 80%;
     left: 35%;
     transform: translate(-60%, -20%);
-}
+} */
   
 .custom-select select {
     background-color: var(--color2);
