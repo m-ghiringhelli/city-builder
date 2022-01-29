@@ -76,7 +76,7 @@ sloganDisplayButton.addEventListener('click', () => {
     const newSlogan = sloganInput.value;
     //update state
     //add quotes if none provided
-    if (newSlogan == '') return;
+    if (newSlogan === '') return;
     if (newSlogan[0] === `"` || newSlogan[0] === `'`) {
         slogansArray.push(newSlogan); 
     } else {
