@@ -21,7 +21,7 @@ const architectureText = document.getElementById('architecture-count-display');
 const cultureText = document.getElementById('culture-count-display');
 //city slogans
 const sloganInput = document.getElementById('slogan-input');
-const sloganButton = document.getElementById('slogan-button');
+const sloganDisplayButton = document.getElementById('slogan-button');
 const sloganEl = document.getElementById('slogan-display');
 
 // let state
@@ -71,10 +71,11 @@ cultureSelect.addEventListener('change', () => {
     cultureContainer.style.setProperty('margin-bottom', '0px');
 });
 
-sloganButton.addEventListener('click', () => {
+sloganDisplayButton.addEventListener('click', () => {
     const newSlogan = sloganInput.value;
     //update state
     //add quotes if none provided
+    if (newSlogan == '') return;
     if (newSlogan[0] === `"` || newSlogan[0] === `'`) {
         slogansArray.push(newSlogan); 
     } else {
@@ -89,12 +90,13 @@ sloganButton.addEventListener('click', () => {
 sloganInput.addEventListener('keypress', (e) => {
     if (e.key === 'Enter') {
         e.preventDefault();
-        sloganButton.click();
+        sloganDisplayButton.click();
     }
 });
 
 function displayStats(type, count, element) {
-    const string = createCountString(type, count);
+    let string = createCountString(type, count);
+    if (count > 1 ? string += 'times.' : string += 'time.');
     element.textContent = string;
 }
 
