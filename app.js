@@ -72,14 +72,25 @@ cultureSelect.addEventListener('change', () => {
 });
 
 sloganButton.addEventListener('click', () => {
-    //get user input
     const newSlogan = sloganInput.value;
     //update state
-    slogansArray.push(newSlogan);
+    //add quotes if none provided
+    if (newSlogan[0] === `"` || newSlogan[0] === `'`) {
+        slogansArray.push(newSlogan); 
+    } else {
+        slogansArray.push(`"` + newSlogan + `"`);
+    }
     //clear input
     sloganInput.value = '';
     //update DOM
     displaySlogans(slogansArray);
+});
+
+sloganInput.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+        e.preventDefault();
+        sloganButton.click();
+    }
 });
 
 function displayStats(type, count, element) {
@@ -88,6 +99,7 @@ function displayStats(type, count, element) {
 }
 
 function displaySlogans(slogan) {
+    //get user input
     //update DOM
     sloganEl.textContent = '';
     //loop through the slogans to display
