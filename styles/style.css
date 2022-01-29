@@ -118,6 +118,7 @@ label {
     width: 150px;
     border: none;
     font-size: 16px;
+    font-weight: bold;
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
     -webkit-appearance: button;
     appearance: button;
@@ -136,6 +137,7 @@ input {
     border-radius: 5px;
     border-color: var(--color2);
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    height: 30px;
 }
 
 #buttons-div {
@@ -148,10 +150,13 @@ button {
     background-color: var(--color2);
     color: var(--color1);
     border: 2px solid var(--color2);
-    width: 45%;
+    width: 48%;
     margin: 5px 0px;
-    padding: 10px;
+    padding: 10px 0px;
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    font-size: 0.9rem;
+    font-weight: bold;
+    font-color: var(--color1);
 }
 
 p {

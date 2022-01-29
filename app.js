@@ -22,6 +22,7 @@ const cultureText = document.getElementById('culture-count-display');
 //city slogans
 const sloganInput = document.getElementById('slogan-input');
 const sloganDisplayButton = document.getElementById('slogan-button');
+const sloganResetButton = document.getElementById('reset-button');
 const sloganEl = document.getElementById('slogan-display');
 
 // let state
@@ -87,6 +88,10 @@ sloganDisplayButton.addEventListener('click', () => {
     displaySlogans(slogansArray);
 });
 
+sloganResetButton.addEventListener('click', () => {
+    resetSlogans();
+});
+
 sloganInput.addEventListener('keypress', (e) => {
     if (e.key === 'Enter') {
         e.preventDefault();
@@ -112,4 +117,8 @@ function displaySlogans(slogan) {
         //and append to DOM
         sloganEl.appendChild(sloganPara);
     }
+}
+
+function resetSlogans() {
+    sloganEl.textContent = '';
 }
