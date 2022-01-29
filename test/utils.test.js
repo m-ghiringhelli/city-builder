@@ -5,10 +5,10 @@ import {
 
 const test = QUnit.test;
 
-test('should return Youve changed the climate 4 times.', (expect) => {
+test('should return Youve changed the climate 4 ', (expect) => {
     //Arrange
     // Set up your arguments and expectations
-    const expected = `You've changed the climate 4 times.`;
+    const expected = `You've changed the climate 4 `;
     
     //Act 
     // Call the function you're testing and set the result to a const
