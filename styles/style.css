@@ -2,33 +2,19 @@
 body {
     /* feel free to update these css variables for a quick theme */
     
-    --color1: white;
-    --color2: white;
-    --color3: white;
-    --color4: white;
-    --color5: white;
+    --color1: hsla(71, 50%, 95%, 1);
+    --color2: hsla(197, 88%, 40%, 1);
+    --color3: hsla(355, 87%, 66%, .1);
+    --color4: hsla(238, 16%, 55%, .2);
+    --color5: hsla(239, 94%, 19%, 1);
     
-    /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
-        
-    /* --color1: hsla(349, 69%, 76%, 1);
-    --color2: hsla(207, 67%, 44%, 1);
-    --color3: hsla(200, 61%, 56%, 1);
-    --color4: hsla(187, 41%, 94%, 1);
-    --color5: hsla(170, 28%, 95%, 1); */
-
-    /* --color1: hsla(45, 86%, 83%, 1);
-    --color2: hsla(135, 65%, 98%, 1);
-    --color3: hsla(315, 37%, 86%, 1);
-    --color4: hsla(45, 73%, 98%, 1);
-    --color5: hsla(224, 40%, 79%, 1); */
-    
-    --header-height: 80px;
-    --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
-    --gutter: 30px;
-    --footer-height: 25px;
-    
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Voltaire', sans-serif;
     background-color: var(--color2);
+    background-image: url(../assets/city-bg.jpg);
+    color: var(--color1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 main {
@@ -37,20 +23,58 @@ main {
     justify-content: center;
     align-items: center;
     margin-bottom: calc(var(--footer-height));
+    width: 95%;
+    border-radius: 40px;
+    background-color: var(--color4);
+    padding-bottom: 100px;
+    margin-top: 25px;
 }
 
-section {
-    background-color: var(--color5);
-    max-width: 80%;
+#dropdowns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+    width: 100%;
+}
+
+select {
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+img {
+    width: 400px;
+    height: 266px;
+    border-radius: 15px;
+    background-color: var(--color3);
+}
+
+span {
+    font-size: 1.3rem;
+}
+
+.image-menu {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: var(--gutter);
-    padding-bottom: var(--gutter);
-    margin-top: var(--gutter);
-    margin-bottom: var(--gutter);
-    border: solid 2px var(--color1);
+    justify-content: flex-end;
+    padding: 5px;
+    margin-bottom: 26px;
+}
+
+#break {
+    width: 100%;
+}
+
+#slogan {
+    display: flex;
+    flex-direction: column;
+}
+
+#slogan-input {
+    margin: 5px 0px;
 }
 
 header {
@@ -61,22 +85,83 @@ header {
     box-shadow: var(--shadow);
 }
 
-
-h2 {
-    font-size: 1.8rem;
+h1 {
+    font-size: 6rem;
     font-weight: bold;
+    margin: 50px 0px 0px 0px;
+    text-shadow: 0 5px 25px var(--color1);
+}
+
+label {
+    font-size: 2rem;
+    display: flex;
+    /* align-items: center; */
+    /* margin-bottom: 15px; */
 }
 
 .gutter-right {
     margin-right: 20px;
 }
 
+.label-select {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0px;
+}
+  
+.custom-select select {
+    background-color: var(--color2);
+    color: var(--color1);
+    padding: 12px;
+    width: 150px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    -webkit-appearance: button;
+    appearance: button;
+    outline: none;
+}
+  
+.custom-select select option {
+    padding: 30px;
+}
+
 header img {
     height: var(--header-height);
 }
 
+input {
+    border-radius: 5px;
+    border-color: var(--color2);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    height: 30px;
+}
+
+#buttons-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    border-radius: 5px;
+    background-color: var(--color2);
+    color: var(--color1);
+    border: 2px solid var(--color2);
+    width: 48%;
+    margin: 5px 0px;
+    padding: 10px 0px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    font-size: 0.9rem;
+    font-weight: bold;
+    font-color: var(--color1);
+}
+
 p {
     margin: var(--gutter);
+    font-size: 1.8rem;
 }
   
 footer {

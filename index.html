@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Voltaire&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/home.css">
@@ -13,55 +15,74 @@
 </head>
 
 <body>
-    <header>
-        <div class="gutter-right logo">
-            <img src="./assets/big-logo.png" />
-        </div>
-    </header>
     <main>
-        <section class="main-section">
-            <img class="main-logo" src="./assets/alchemy-logo.png" />
-            <h2>
-                Welcome to Alchemy Bootstrap!
-            </h2>
-
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam repellendus similique consectetur
-                voluptas facilis molestiae voluptates nobis error sapiente, ad, ipsa vero non, sint eligendi? Eos
-                praesentium iusto magnam exercitationem.
-                Earum sunt voluptatibus molestias, sint voluptatum quos reiciendis. Id asperiores deleniti dolores
-                provident, eius, nostrum aperiam vel, optio qui illo corrupti in. Eum quam, est nemo porro sapiente
-                excepturi assumenda.
-                Rerum unde quidem maxime. Ullam, dolores labore molestias voluptatibus adipisci quod? Quaerat nihil
-                inventore molestiae assumenda, voluptates vel necessitatibus eligendi? Accusamus ratione eligendi
-                reprehenderit? Beatae incidunt molestias ea soluta nulla.
-                Fugiat quae soluta voluptate mollitia praesentium modi ex illo, autem assumenda, vel aliquam fugit
-                possimus dolorem esse corporis ipsa! Voluptatem sapiente error non, ea optio suscipit quasi maxime nobis
-                ex?
-                Et ipsa tenetur ullam ab nesciunt quas fugit velit impedit illum esse eligendi corporis culpa
-                praesentium aspernatur ex sint veniam quidem, doloribus corrupti hic vitae. Eum neque ducimus omnis
-                exercitationem?
-            </p>
-            <hr />
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam repellendus similique consectetur
-                voluptas facilis molestiae voluptates nobis error sapiente, ad, ipsa vero non, sint eligendi? Eos
-                praesentium iusto magnam exercitationem.
-                Earum sunt voluptatibus molestias, sint voluptatum quos reiciendis. Id asperiores deleniti dolores
-                provident, eius, nostrum aperiam vel, optio qui illo corrupti in. Eum quam, est nemo porro sapiente
-                excepturi assumenda.
-                Rerum unde quidem maxime. Ullam, dolores labore molestias voluptatibus adipisci quod? Quaerat nihil
-                inventore molestiae assumenda, voluptates vel necessitatibus eligendi? Accusamus ratione eligendi
-                reprehenderit? Beatae incidunt molestias ea soluta nulla.
-                Fugiat quae soluta voluptate mollitia praesentium modi ex illo, autem assumenda, vel aliquam fugit
-                possimus dolorem esse corporis ipsa! Voluptatem sapiente error non, ea optio suscipit quasi maxime nobis
-                ex?
-                Et ipsa tenetur ullam ab nesciunt quas fugit velit impedit illum esse eligendi corporis culpa
-                praesentium aspernatur ex sint veniam quidem, doloribus corrupti hic vitae. Eum neque ducimus omnis
-                exercitationem?
-            </p>
-
+        <h1>SIM SHITTY</h1>
+        <section id="dropdowns">
+            <div class="image-menu" id="climate-image-menu">
+                <div class="label-select">
+                    <label>
+                        CLIMATE :
+                        <div class="custom-select">
+                            <select id="climate-menu">
+                                <option disabled selected value>- pick one! -</option>
+                                <option value="tropical">Tropical</option>
+                                <option value="temperate">Temperate</option>
+                                <option value="arid">Arid</option>
+                                <option value="polar">Polar</option>
+                            </select>
+                        </div>
+                    </label>
+                </div>
+                <img id="climate-image" class="image">
+                <span id="climate-count-display"></span>
+            </div>
+            <div class="image-menu" id="architecture-image-menu">
+                <div class="label-select">
+                    <label>
+                        ARCHITECTURE :
+                        <div class="custom-select">
+                            <select  id="architecture-menu">
+                                <option disabled selected value>- pick one! -</option>
+                                <option value="modern">Modern</option>
+                                <option value="artdeco">Art Deco</option>
+                                <option value="spanish">Spanish Colonial</option>
+                                <option value="neoclassical">Neoclassical</option>
+                            </select>
+                        </div>
+                    </label>
+                </div>
+                <img id="architecture-image" class="image">
+                <span id="architecture-count-display"></span>
+            </div>
+            <div class="image-menu" id="culture-image-menu">
+                <div class="label-select">
+                    <label>
+                        CULTURE :
+                        <div class="custom-select">
+                            <select id="culture-menu">
+                                <option disabled selected value>- pick one! -</option>
+                                <option value="south">South</option>
+                                <option value="newengland">New England</option>
+                                <option value="midwest">Midwest</option>
+                                <option value="northwest">Pacific Northwest</option>
+                            </select>
+                        </div>
+                    </label>
+                </div>
+                <img id="culture-image" class="image">
+                <span id="culture-count-display"></span>
+            </div>
         </section>
+        <div id="break"></div>
+        <label id="slogan">
+            What is your city's slogan?
+            <input id="slogan-input">
+            <div id="buttons-div">
+                <button id="slogan-button" type="submit">SHOW SLOGANS</button>
+                <button id="reset-button" type="submit">CLEAR SLOGANS</button>
+            </div>
+        </label>
+        <div id="slogan-display"
     </main>
     <footer>
         <div class="copy gutter-right">&copy; 2021 Alchemy Code Lab</div>

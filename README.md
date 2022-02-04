@@ -6,6 +6,28 @@ If you work on more than one feature at a time, you are guaranteed to multiply y
 
 ## Making a plan
 
+HTML
+1) Build dropdowns  CHECK
+2) Structure divs for grouping CHECK
+3) Add images CHECK
+4) Add slogans input CHECK
+
+JavaScript
+1) Test/create function
+2) Import function / grab DOM elements
+3) Set states
+4) Add event listeners
+5) Dropdowns add images
+6) Store and display dropdown changes
+7) Add slogans to state array and display
+8) Function to display stats
+9) Function to display slogans
+10) Tidy
+
+CSS
+1) Style dropdowns / images
+2) Style page
+
 1) **Make a drawing of your app. Simple "wireframes"**
 1) **Once you have a drawing, name the HTML elements you'll need to realize your vision**
 1) **For each HTML element ask: Why do I need this? (i.e., "we need div to display the results in")** 
