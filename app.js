@@ -121,4 +121,5 @@ function displaySlogans(slogan) {
 
 function resetSlogans() {
     sloganEl.textContent = '';
+    slogansArray = [];
 }
